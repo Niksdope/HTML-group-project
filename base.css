@@ -1,0 +1,394 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+        #Menu + Logo
+	#Misc 
+        #Sidebar
+        #Footer
+*/
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+	.right{
+		float:right;
+	}
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: url(../images/tactile_noise.png) repeat #000;
+		font: 16px/1.5em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #444;
+ }
+
+ .fb-like, .fb-like span, .fb-like span iframe[style] {width: 100% !important;}
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #d79f0f;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+		font-weight: bold;
+		text-transform: uppercase; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 32px; line-height: 50px; }
+	h2 { font-size: 28px; line-height: 40px; text-align: center; }
+	h3 { font-size: 24px; line-height: 34px; color: #444; }
+	h4 { font-size: 18px; line-height: 30px; }
+	h5 { font-size: 15px; line-height: 24px; }
+	h6 { font-size: 12px; line-height: 21px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; font-size: 12px;}
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #222; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+        
+/* #Menu & Logo
+================================================== */        
+        .header {
+	         margin: 20px 0;
+	         clear: both;
+        }
+        .header .logo{
+        	margin: 12px 0 13px;
+        }
+        
+        .social {
+        	margin-left: 20px;
+        	height: 41px;
+        }
+
+        .social_container {
+        	float:right;
+        	border-bottom: 1px solid #444;
+        }
+
+        .social_container a{
+        	float:right;
+        	display:block;
+        	font: bold 10px/41px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        	text-transform: uppercase;
+        	color: #c99f32;
+        	text-decoration: none;
+        	margin: 0 8px;
+        	padding: 0 7px;
+        	border-right: 1px solid #444;
+        }
+        .social_container a:nth-child(1){
+        	border-right: 0 none;
+        }
+
+        .social_container a.facebook{
+        	padding-left: 34px;
+        	color: #375188;
+        	background: url(../images/social_icons.png) 0 0 no-repeat;
+        }
+
+        .menu_container{
+	        height: 31px;
+	        margin: 0 0 0 20px;
+        }
+
+        .menu_container .menu{
+            float: right;
+	        margin: 5px 0 0;
+        }
+
+        .menu li {
+           display: inline-block;
+           position: relative;
+           font: bold 14px/31px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+           text-transform: uppercase;
+           list-style: none;
+        }
+
+        .menu li a{
+        	text-decoration: none;
+        	color: #fff;
+        	display: inline-block;
+        	padding: 0 15px;
+        }
+
+        .menu li:after{
+        	content: "/";
+        	position: absolute;
+        	top: 0;
+        	bottom: 0;
+        	right: 0;
+        }
+
+        .menu li a:last-child:after{
+        	content: "";
+        }
+       
+       	.menu li a:hover{
+       		color: #c99f32;
+       	}
+
+        .logo a{
+            text-decoration: none;
+        }
+
+/* #Misc
+================================================== */
+        .title{
+            padding-bottom: 15px;
+        }	
+        
+        .full-width{
+            padding-left: 10px;
+        } 
+        
+ /* #Sidebar
+================================================== */
+        .sidebar{
+            font: 14px/1.5em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-right:-5px;
+                }   
+                
+        .sidebar li{
+            list-style: none;
+        }
+
+/* #Home Blurb
+================================================== */
+        .home-blurb{
+        	font-size: 14px;
+        	margin-bottom: 15px;
+        }
+        .home-blurb p{
+        	padding: 5px;
+			margin: 0;
+			line-height: 20px; 
+			font-size: 14px;
+        }
+        .home-blurb p:nth-child(1){
+        	font-size: 14px;
+        }
+        .home-blurb .fourteen{
+        	font-size: 14px;
+        }
+        strong {
+			font-weight: bold;
+		}
+		.live_pic .carbon-color{
+			color: #6D5311;
+		}
+		.carbon-color{
+			color: #d79f0f;
+		}
+
+/* .main
+================================================== */
+		.main{
+			padding: 10px;
+		}
+		.main .post-title{
+			text-decoration: none;
+		}
+
+		.feat_image img, .post img{
+		  -webkit-border-radius: 3px; 
+		     -moz-border-radius: 3px; 
+		          border-radius: 3px; 
+		}
+
+ /* INDEX PAGE
+================================================== */
+		.container.post{
+		  -webkit-border-radius: 3px; 
+		     -moz-border-radius: 3px; 
+		          border-radius: 3px; 
+		   	margin: 20px auto;
+		}
+		.post p{
+			margin: 0 0 20px;
+			
+		}
+		.post a{
+			text-decoration: none;
+		}
+		.deats{
+			background: white;
+	   	  -webkit-border-radius: 3px; 
+		     -moz-border-radius: 3px; 
+		          border-radius: 3px; 
+		}
+		.deats .dinner{
+			padding: 12px;
+			margin: 0;
+		}
+
+
+
+ /* #Footer
+================================================== */
+		
+		.footer{
+			margin: 15px 0;
+			border-top: 1px solid #444;
+			padding: 15px 0;
+		}
+
+        .footer li{
+            list-style: none;
+            font-size: 11px;
+        }
+        .footer ul{
+        	float: right;
+        	margin-bottom: 6px;
+        }
+        .footer .meta{
+        	text-transform: uppercase;
+        	font-size: 11px;
+        	color: #999;
+        	text-align: right;
+        }
+        .footer .meta a{
+        	color: #d79f0f;
+        	font-weight: bold;
+        	text-decoration: none;
+        }

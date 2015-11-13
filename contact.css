@@ -1,0 +1,121 @@
+.myform	{
+	clear:both;
+	width:490px;
+	padding:30px 0;
+	overflow:hidden;
+}
+#stylized	{
+	border:0;
+}
+#stylized label	{
+	display:block;
+	font-weight:bold;
+	text-align:left;
+	text-indent:0px;
+	line-height:1.8em;
+	width:230px;
+	height:22px;
+	padding:2px 0;
+	margin:2px 0 0 0;
+	float:left;
+}
+#stylized span	{
+	font-weight:normal;
+	color:#F00;
+}
+#stylized input	{
+	float:left;
+	padding:2px;
+	border:1px solid #dfdfdf;
+	width:240px;
+	height:20px;
+	margin:2px 0 15px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);
+	position:relative;
+
+}
+#stylized textarea	{
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:1px solid #dfdfdf;
+	width:240px;
+	max-width:240px;
+	min-height:100px;
+	margin:2px 0 15px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);
+	position:relative;
+}
+#stylized img	{
+	clear:both;
+	display:block;
+	margin:0 0 4px 240px;
+	width:84px;
+	height:20px;
+	position:relative;
+	top:-23px;
+}
+p.errortext	{
+	color:#F00;
+	text-indent:240px;
+	text-align:left;
+	font-size:0.9em;
+}
+#stylized button	{
+	clear:both;
+	margin-left:240px;
+	padding:4px 15px;
+	background:#000;
+	text-align:center;
+	color:#fff;
+	border:0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);
+	position:relative;
+}
+#stylized button:hover	{
+	cursor:pointer;
+	background:#ef8800;
+}
+
+#contactpagedetails	{
+	padding:0;
+	width:300px;
+	float:left;
+}
+#contactpagedetails	p {
+	padding:0;
+	margin:0;
+}
+#contactpagedetails a	{
+	text-decoration:none;
+}
+
+#contactpagedetails	h3 {
+	padding:0;
+	margin:0;
+}
+#map_canvas	{
+	float:right;
+	width:440px;
+	height:300px;
+}
+a.viewmap:link,
+a.viewmap:visited,
+a.viewmap:hover,
+a.viewmap:active	{
+	display:block;
+	height:30px;
+	margin:10px 0 0 0;
+	line-height:2em;
+}

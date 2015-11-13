@@ -1,0 +1,485 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+#mainContent{
+	background: white;
+	margin-bottom: 10px;
+    padding: 8px 0;
+
+  -webkit-border-radius: 10px; 
+     -moz-border-radius: 10px; 
+          border-radius: 10px; 
+  
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+#mainContent .grey_carbon{
+	background: url(../images/white_carbon.jpg) no-repeat;
+	text-transform: uppercase;
+	padding-top: 65px;
+	font-size: 20px;
+	color: #999;
+	font-weight: 600;
+}
+#mainContent .home_squares{
+	margin: 15px 0;
+	background: url(../images/facebook_carbon.jpg) no-repeat;
+	padding-top: 65px;
+}
+#mainContent .home_squares a{
+	display: block;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+#mainContent .square_fb{
+	color: #3b5998;
+}
+#mainContent .square_tw{
+	color: #00a0d1;
+}
+
+#mainContent img{
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+#mainContent .event_pic{
+	margin-top: 5px;
+	position: relative;
+	text-decoration: none;
+	z-index: 1;
+	min-height: 309px;
+}
+#mainContent img{
+	position: absolute;
+	top: 0; left: 0;
+	z-index: -1;
+}
+#mainContent .event_content{
+	margin: 15px 0 0 100px;
+	text-decoration: none;
+	padding: 8px;
+	background: url(../images/trans_white_80.png) repeat;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+#mainContent .event_content h4{
+	text-decoration: none !important;
+}
+#whatson{
+	margin-top: 20px;
+	background: white;
+	margin-bottom: 10px;
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+  
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.whatsonheader{
+	height: 50px;
+	background: url(../images/orange_stripe.png) repeat;
+	line-height: 50px;
+	padding: 5px 25px;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+
+  -webkit-border-radius: 3px 3px 0 0; 
+     -moz-border-radius: 3px 3px 0 0; 
+          border-radius: 3px 3px 0 0; 
+}
+.whatsonheader span{
+	padding-left: 80px;
+	display: block;
+	background: url(../images/date.png) center left no-repeat;
+}
+
+.container .head{
+	background: url(../images/header_repeat.png) repeat;
+	margin: 30px 0 15px 0;
+	padding: 0 15px;
+	text-transform: uppercase;
+	font: bold 16px/28px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.gallery img{
+	margin: 5px 0;
+}
+
+/* Live Block
+================================================== */
+.live_pic{
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 0 20px;
+}
+.live_pic .blurb{
+	margin: 20px;
+	padding: 8px;
+	max-width: 450px;
+	background: url(../images/trans_white.png) repeat;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+.live_pic .blurb p{
+	margin: 0;
+	padding: 0;
+	color: #222;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+
+/* Twitter & Facebook Blocks
+================================================== */
+.date-block{
+	background: url(../images/orange_stripe.png) repeat;
+	text-decoration: none;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+.deats .date-block{
+	background: url(../images/orange_stripe.png) repeat;
+	text-decoration: none;
+	float:left;
+	margin: 0 10px 15px 0;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+.read-block{
+	background: url(../images/red_stripe.png) repeat;
+	text-decoration: none;
+	float: left;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+
+.facebook-block{
+	background: url(../images/fb_stripe.png) repeat;
+	margin-top: 10px;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+.contact-block{
+	background: url(../images/red_stripe.png) repeat;
+	margin-top: 10px;
+	text-decoration: none;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+.location-block{
+	background: url(../images/green_stripe.png) repeat;
+	margin-top: 10px;
+	text-decoration: none;
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+}
+.inner{
+	margin: 5px 0;
+	padding: 5px 5px 4px 75px;
+	min-height: 62px;
+}
+.date-block .inner{
+	background: url(../images/date.png) no-repeat left center;
+	color: #fff;
+	font-weight: bold;
+	line-height: 62px;
+	padding-left: 100px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.deats .date-block .inner{
+	background: url(../images/date.png) no-repeat left center;
+	color: #fff;
+	font-weight: bold;
+	line-height: 37px;
+	min-height: 37px;
+	padding-left: 100px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.read-block .inner{
+	background: url(../images/next.png) no-repeat right center;
+	color: #fff;
+	font-weight: bold;
+	line-height: 37px;
+	min-height: 37px;
+	padding-right: 100px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.facebook-block .inner{
+	background: url(../images/facebook.png) no-repeat;
+}
+.facebook-block .single .fb-like{
+	margin: 19px 0 19px 25px;
+}
+.contact-block .inner{
+	background: url(../images/contact.png) no-repeat;
+}
+.location-block .inner{
+	background: url(../images/location.png) no-repeat;
+}
+
+.inner h4{
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.inner p{
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+/* ======== INFO BLOCK MESSAGES
+*/
+.info_block{
+	background: url(../images/green_stripe.png) repeat;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.info_block:hover{
+	text-decoration:none;
+}
+.info_block .inner{
+	padding: 0;
+	margin: 0;
+}
+.info_block .img-holder{
+	width: 50%;
+	background: blue;
+}
+.info_block h3{
+	font: bold 16px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	padding: 10px 10px 5px 10px;
+	text-transform: uppercase;
+}
+.info_block h5{
+	font: bold 13px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #111;
+	padding: 0 10px 0 10px;
+}
+.info_block img{
+	max-width: 50%;
+	height: auto;
+}
+.info_block .left{
+	float:left;
+	text-align: left;
+}
+.info_block .right{
+	float:right;
+	text-align:right;
+}
+
+/* ======== EVENTS MESSAGES
+*/
+
+.event{
+	background: url(../images/orange_stripe.png) repeat;
+	margin-top: 20px;
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+.event .inner{
+	padding: 6px;
+}
+
+.event .date {
+	border-right: 4px solid #7a5c2a;
+	border-bottom: 1px solid #7a5c2a;
+	padding: 2px 7px 2px 4px;
+	font: bold 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	height: 42px;
+	text-transform: uppercase;
+}
+.event .title { 
+	border-top: 4px solid #7a5c2a;
+	padding: 8px 0;
+	font: bold 15px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+    color: #2e2310;
+}
+.event .content {
+	font: bold 12px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #543f1d;
+	padding: 6px;
+	position: relative;
+	background: #ac823c;
+	border: 1px solid #906d32;
+}
+
+/* ======== DAY EVENTS
+*/
+.day-event{
+	border-top: 1px solid #ddd;
+	position: relative;
+}
+.day-event.no-border{border-top: 0 none;}
+
+.day-event:after{
+	content: "";
+	position: absolute;
+	right:-10px;
+	top:0;
+	width: 1px;
+	background: #ddd;
+	bottom: 0;
+}
+.day-event .inner{
+	margin: 8px 0;
+	padding:  0 8px;
+}
+.day-event h3{
+	font-size: 16px;
+	line-height: 20px;
+	padding: 8px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.day-event p{
+	color:#444;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 0 0 8px;
+}
+
+/* ======== PAGE CONTENT
+*/
+.the_content{
+	padding: 10px;
+}
+.the_title{
+	padding: 0 10px;
+}
+
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		ul.menu li {
+			font-size: 12px;
+		}
+		.social_container a{
+			font-size: 8px;
+		}
+		.flexslider{
+			margin: 5px 0;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+		.social_container a{
+			border-right: 0 none;
+		}
+
+		.menu_container{
+	        height: auto;
+	        margin: 0;
+        }
+
+        .menu li {
+        	margin: 10px 0;
+        }
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.flexslider{
+			margin: 1px -4px;
+		}
+		.event{
+			margin: 10px 0;
+		}
+
+        .info_block h3{
+        	padding: 10px 10px 3px 10px;
+        }
+        .info_block h5{
+        	font-size: 12px;
+        }
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.flexslider{
+			margin: 1px -4px;
+		}
+
+		.event{
+			margin: 10px 0;
+		}
+
+		.info_block h3{
+        	padding: 10px 10px 3px 10px;
+        }
+        .info_block h5{
+        	font-size: 12px;
+        	padding: 0 10px 15px 0;
+        }
+	}
